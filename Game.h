@@ -6,6 +6,8 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
 
+// TODO: To remove
+#include <iostream>
 
 class Game {
     public:
@@ -27,7 +29,13 @@ class Game {
         sf::VideoMode videoMode;
         sf::Event evt;
 
+        // -- GAME OBJS -- //
+        // KEEP NOTE: RectShape is not something we
+        // should be using if we intend to add textures
+        sf::RectangleShape enemy;
+
         // -- FUNCS -- //
         void initVars();
         void initWindow();
+        void initEnemies();
 };
