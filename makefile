@@ -1,3 +1,3 @@
 main.o:
-	g++ main.cpp -lsfml-graphics -lsfml-system -lsfml-window
+	g++ Main.cpp Game.cpp -lsfml-graphics -lsfml-system -lsfml-window
 
